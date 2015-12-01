@@ -34,5 +34,5 @@ handler.on('issues', function (event) {
     event.payload.action,
     event.payload.issue.number,
     event.payload.issue.title);
-  run_cmd('sh', ['./deploy-dev.sh'], function(text){ console.log(text) });
+  run_cmd('sh', ['./deploy-master.sh'], function(text){ console.log(text) });
 });
